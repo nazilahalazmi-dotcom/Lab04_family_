@@ -1,0 +1,64 @@
+task 1
+
+house = house.
+true.
+
+30 ?- house = abc.
+false.
+
+31 ?- edge(a,b) = edge(C,b).
+C = a.
+
+32 ?- edge(a,d) = edge(C,B).
+C = a,
+B = d.
+
+33 ?- edge(C,B) = edge(a,d).
+C = a,
+B = d.
+
+34 ?- edge(A,f(g,h)) = edge(a,B).
+A = a,
+B = f(g, h).
+
+35 ?- edge(A,A) = edge(b,c).
+false.
+
+36 ?-  edge(A,A) = edge(b,b).
+A = b.
+
+37 ?-  A = B, B = f.
+A = B, B = f.
+
+38 ?- A = B, B = f, A = e.
+false.
+
+TASK 2 - Queries and Answers
+
+22 ?- consult(['c:/Users/96659/Downloads/Lab04_family_facts.pl']).
+true.
+
+23 ?- female(X).
+X = sara ;
+X = nora.
+
+24 ?-  male(_).
+true .
+
+25 ?- parent(Grandparent, Parent), parent(Parent, faisal).
+Grandparent = ali,
+Parent = muhammad .
+
+26 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora ;
+false.
+
+27 ?- parent(Parent, ahmad), parent(Parent, muhammad).
+Parent = ali.
+
+28 ?- male(khan), parent(Parent, khan), parent(Parent, nora).
+Parent = ahmad.
+
+29 ?- 
+
